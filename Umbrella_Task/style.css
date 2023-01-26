@@ -1,0 +1,121 @@
+body {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #b6d0e2;
+}
+.container {
+  position: relative;
+  /* background-color: blueviolet; */
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.img-container {
+  background-image: url("./res/Blue_umbrella.png");
+  height: 355px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.loader-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+#loading-img {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  right: 70px;
+  top: 40px;
+  animation: rotation 2s infinite linear;
+  /* display: none; */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  position: absolute;
+  height: 55px;
+  width: 80px;
+  bottom: 0pt;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .img-container img {
+  height: 350px;
+} */
+.detail-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.colorPallet {
+  display: flex;
+}
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  border: 1px solid;
+  margin-right: 10px;
+  transition: 0.1s;
+}
+.color:hover {
+  border: 2px solid rgb(211, 115, 115);
+  size: 20%;
+}
+.yello {
+  background-color: yellow;
+}
+.blue {
+  background-color: rgb(110, 179, 225);
+}
+.pink {
+  background-color: rgb(242, 114, 221);
+}
+#smallPara {
+  font-size: 70%;
+}
+.btn {
+  display: flex;
+  /* border: 1px solid; */
+  width: 100%;
+  background-color: rgb(69, 164, 242);
+  color: aliceblue;
+}
+.btn-img {
+  margin: auto;
+}
+.btn-title {
+  display: flex;
+  margin: auto;
+}
+
+.btn-cancel {
+  margin-left: 20px;
+  display: flex;
+  font-size: large;
+}

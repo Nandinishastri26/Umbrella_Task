@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Umbrella</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <div class="logo"></div>
+      </div>
+      <div class="loader-container">
+        <img id="loading-img" src="./res/loader_icon.svg" alt="Loading..." />
+      </div>
+      <div class="detail-container">
+        <div class="div">
+          <h1>Custom Umbrella</h1>
+        </div>
+        <div class="colorPallet">
+          <div class="color blue"></div>
+          <div class="color pink"></div>
+          <div class="color yello"></div>
+        </div>
+        <div class="detail">
+          <h3>Customize your umbrella</h3>
+          <p>Upload a logo of an instant preview</p>
+          <p id="smallPara">.png and .jpg files only. Max file size is 5MB</p>
+        </div>
+        <div class="btn">
+          <span class="btn-ele btn-img">
+            <img id="btn-icon" src="./res/upload_icon.svg" alt="unavailable" />
+          </span>
+          <div class="btn-ele btn-title">
+            <label for="files">STARAPPS_1.PNG</label>
+            <input
+              type="file"
+              id="files"
+              style="visibility: hidden; display: none"
+            />
+          <!-- </div>
+          <div class="btn-ele btn-cancel">X</div>
+        </div> -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
